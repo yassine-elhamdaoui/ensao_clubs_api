@@ -1,0 +1,46 @@
+vich_uploader:
+   db_driver: orm
+   metadata:
+      type: attribute
+   mappings:
+      user_images:
+         uri_prefix: /uploads/images/users
+         upload_destination: '%kernel.project_dir%/public/uploads/images/users'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true
+
+      club_images:
+         uri_prefix: /uploads/images/clubs
+         upload_destination: '%kernel.project_dir%/public/uploads/images/clubs'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true
+
+      cellule_images:
+         uri_prefix: /uploads/images/cellules
+         upload_destination: '%kernel.project_dir%/public/uploads/images/cellules'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true
+
+      event_images:
+         uri_prefix: /uploads/images/events
+         upload_destination: '%kernel.project_dir%/public/uploads/images/events'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true
+
+      project_images:
+         uri_prefix: /uploads/images/projects
+         upload_destination: '%kernel.project_dir%/public/uploads/images/projects'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true
+
+      post_images:
+         uri_prefix: /uploads/images/posts
+         upload_destination: '%kernel.project_dir%/public/uploads/images/posts'
+         namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+         delete_on_remove: true
+         delete_on_update: true

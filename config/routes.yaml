@@ -1,0 +1,17 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+api_login_check:
+    path: /api/login_check
+    methods: ['POST']
+
+# config/routes.yaml
+verify_email:
+    path: /verify/{token}
+    controller: App\Controller\VerificationController::verifyEmail
+
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation

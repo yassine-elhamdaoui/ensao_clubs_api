@@ -1,0 +1,7 @@
+framework:
+    cache:
+        # pools:
+        #     redis_cache:
+        #         adapter: cache.adapter.redis
+        #         default_lifetime: 3600 # Optional: Set the default cache lifetime in seconds
+        #         public: true # Optional: Cache public pages separately
